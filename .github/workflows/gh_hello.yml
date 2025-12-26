@@ -11,5 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Say Hello
-        run: echo "Hello, World!"
-        run: echo "How are you doing"
+        run: |
+         echo "Hello, World!"
+         echo "How are you doing"
