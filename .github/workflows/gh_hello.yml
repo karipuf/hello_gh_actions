@@ -1,14 +1,15 @@
-name: Hello World
+name: Hello World 2
 
 on:
   workflow_dispatch:
-    inputs:
-     x:
-      type: string
-      default: foo
+  #  inputs:
+  #   x:
+  #    type: string
+  #    default: foo
 
   push:
     branches:
+      - devzz
       - main
 
 env:
@@ -39,10 +40,3 @@ jobs:
          ls -a
          echo $GITHUB_ENV
          echo $MVENV
-
-
-  inputs:
-    runs-on: ubuntu-latest
-    steps:
-      - name: step_one
-        run: echo ${{ inputs.x }}
