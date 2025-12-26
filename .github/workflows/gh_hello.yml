@@ -30,4 +30,3 @@ jobs:
          echo $chicken
          ls -a
          echo $GITHUB_ENV
-         more `$GITHUB_ENV`
