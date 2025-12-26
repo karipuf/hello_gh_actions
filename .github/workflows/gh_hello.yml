@@ -13,4 +13,4 @@ jobs:
       - name: Say Hello
         run: |
          echo "Hello, World!"
-         echo "How are you doing"
+         echo "How are you doing?"
