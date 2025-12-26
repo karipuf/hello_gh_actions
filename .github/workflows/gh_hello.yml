@@ -15,7 +15,7 @@ jobs:
          echo "Hello, World!"
          echo "How are you doing?"
          echo "`pwd`" > my_file
-	 more my_file
+         more my_file
          echo "chicken=pie" >> $GITHUB_ENV
       - name: Access Env
         run: |
