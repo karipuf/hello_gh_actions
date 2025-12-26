@@ -24,4 +24,4 @@ jobs:
       - name: Access Env
         run: |
          echo $chicken
-         more my_file
+         #more my_file
