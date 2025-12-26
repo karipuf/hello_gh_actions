@@ -24,4 +24,5 @@ jobs:
       - name: Access Env
         run: |
          echo "chicken=pie" >> $GITHUB_ENV
-         echo $chicken
+      - name: show chicken
+        run: echo $chicken
