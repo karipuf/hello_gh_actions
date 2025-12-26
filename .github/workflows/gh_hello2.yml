@@ -1,0 +1,45 @@
+name: Hello World
+
+on:
+  workflow_dispatch:
+  #  inputs:
+  #   x:
+  #    type: string
+  #    default: foo
+
+  push:
+    branche:
+      - devzz
+
+  push:
+    branches:
+      - main
+
+env:
+  MVENV: hehehe
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: |
+         echo "Hello, World!"
+         echo "How are you doing?"
+         echo "`pwd`" > my_file
+         more my_file
+         echo "chicken=pie" >> $GITHUB_ENV
+
+  do-more:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Access Env
+        run: |       
+         echo "chicken=pie" >> $GITHUB_ENV
+         #export chicken=pie
+      - name: show chicken
+        run: |
+         echo $chicken
+         ls -a
+         echo $GITHUB_ENV
+         echo $MVENV
