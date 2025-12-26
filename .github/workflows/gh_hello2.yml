@@ -8,11 +8,8 @@ on:
   #    default: foo
 
   push:
-    branche:
-      - devzz
-
-  push:
     branches:
+      - devzz
       - main
 
 env:
