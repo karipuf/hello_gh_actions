@@ -44,5 +44,5 @@ jobs:
   inputs:
     runs-on: ubuntu-latest
     steps:
-      - name: one
+      - name: step_one
         run: echo ${{ inputs.x }}
