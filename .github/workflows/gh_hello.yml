@@ -12,3 +12,4 @@ jobs:
     steps:
       - name: Say Hello
         run: echo "Hello, World!"
+	run: echo "How are you doing"
