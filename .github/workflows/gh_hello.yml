@@ -28,4 +28,4 @@ jobs:
       - name: show chicken
         run: |
          echo $chicken
-         ls
+         echo "`ls`"
