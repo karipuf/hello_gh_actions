@@ -2,17 +2,17 @@ name: Hello World
 
 on:
   workflow_dispatch:
+    inputs:
+     x:
+      type: string
+      default: foo
+
   push:
     branches:
       - main
 
 env:
   MVENV: hehehe
-
-inputs:
-  x:
-   type: string
-   default: foo
 
 jobs:
   say-hello:
