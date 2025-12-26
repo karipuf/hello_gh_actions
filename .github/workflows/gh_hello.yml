@@ -2,10 +2,10 @@ name: Hello World
 
 on:
   workflow_dispatch:
-  #  inputs:
-  #   x:
-  #    type: string
-  #    default: foo
+    inputs:
+     x:
+      type: string
+      default: foo
 
   push:
     branches:
@@ -40,3 +40,9 @@ jobs:
          ls -a
          echo $GITHUB_ENV
          echo $MVENV
+
+  show-inputs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print it
+        run: echo ${{ inputs.x }}
