@@ -22,7 +22,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Access Env
-        run: |
-         echo "chicken=pie" >> $GITHUB_ENV
+        run: |       
+         #echo "chicken=pie" >> $GITHUB_ENV
+         export chicken=pie
       - name: show chicken
         run: echo $chicken
