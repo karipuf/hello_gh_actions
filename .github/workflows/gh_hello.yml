@@ -17,4 +17,4 @@ jobs:
          echo "`pwd`"
          echo "chicken=pie" >> $GITHUB_ENV
       - name: Access Env
-        run echo $chicken
+        run: echo $chicken
