@@ -19,6 +19,7 @@ jobs:
          echo "chicken=pie" >> $GITHUB_ENV
 
   do-more:
+    runs-on: ubuntu-latest
     steps:
       - name: Access Env
         run: |
