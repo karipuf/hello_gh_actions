@@ -43,6 +43,6 @@ jobs:
 
   inputs:
     runs-on: ubuntu-latest
-    #steps:
-    #  - name: one
-    run: echo ${{ inputs.x }}
+    steps:
+      - name: one
+        run: echo ${{ inputs.x }}
