@@ -12,6 +12,10 @@ on:
       - devzz
       - main
 
+
+  schedule:
+    - cron: "16 6 * * *" # 03:00 UTC daily
+    
 env:
   MVENV: hehehe
 
